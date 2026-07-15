@@ -19,11 +19,11 @@ export default function HeroSection() {
         <div className="pb-8 lg:pb-16">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-[#e1f5ee] px-4 py-2 text-xs font-medium text-[#0f6e56] md:text-sm">
             <span>🏥</span>
-            {/* <span>Trusted Healthcare Platform</span> */}
+            <span>Trusted Healthcare Platform</span>
           </div>
 
           <h1 className="mb-5 text-4xl font-bold leading-tight text-[#1a1a2e] sm:text-5xl lg:text-6xl">
-            {/* Your Health, */}
+            Your Health,
             <br />
             <span className="text-[#1d9e75]">Our Priority</span>
           </h1>
