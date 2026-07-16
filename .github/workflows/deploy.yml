@@ -7,11 +7,9 @@ on:
 
 jobs:
   deploy:
-
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout Code
         uses: actions/checkout@v4
 
@@ -35,17 +33,26 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
 
           script: |
-
+            echo "STEP 1"
             cd ${{ secrets.PROJECT_PATH }}
 
+            echo "STEP 2"
             git pull origin main
 
+            echo "STEP 3"
             npm install
 
+            echo "STEP 4"
             npm run build
 
+            echo "STEP 5"
             pm2 restart medical-project
 
+            echo "STEP 6"
             pm2 save
+
+            echo "STEP 7"
+
+            echo "DONE"
 
             exit 0
